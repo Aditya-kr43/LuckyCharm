@@ -1,0 +1,272 @@
+.landing{
+    min-height: 30vh;
+    margin: 30px 60px;
+}
+
+.hero {
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.star1 {
+    width: 22px;
+    height: 22px;
+    top: 180px;
+    right: 15%;
+}
+
+.star2 {
+    width: 14px;
+    height: 14px;
+    top: 280px;
+    right: 8%;
+}
+
+.star3 {
+    width: 9px;
+    height: 9px;
+    top: 350px;
+    left: 12%;
+}
+
+.navbar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-left a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav-left img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.nav-center{
+    padding: 5px;
+    display:flex;
+background-color: black;
+border-radius: 20px;
+width: fit-content;
+align-items: center;
+gap: 30px;
+
+}
+.nav-center a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.10s ease;
+}
+
+.nav-center a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+.sign-up a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 35px;
+   
+    padding: 10px 20px;
+    
+    transition: 0.10s ease;
+    
+}
+.sign-up a:hover{
+    background-color: black;
+    color: white;
+}
+.precision ul{
+   
+    text-align: center;
+    list-style-position: inside;
+    font-size: 15px;
+    
+}
+.precision li::marker{
+    color: green;
+}
+.precision{
+    min-height: 20vh;
+    margin-top: 100px;
+}
+.landing2{
+    text-align: center;
+    align-items: center;
+}
+.journey-head{
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+}
+.explore a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 10px 20px;
+    transition: 0.10s ease;
+}
+.explore a:hover{
+    background-color: white;
+    color: black;
+}
+.land{
+    min-height: 60vh;
+    background-image:url('land2.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.review {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.review-item{
+    text-align: left;
+}
+.review-item .num{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.review-item .description{
+    font-size: 16px;
+    color: gray;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(232, 224, 224);
+    border: none;
+    margin: 0;
+
+}
+
+
+
+.farm-section {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    padding: 30px;
+}
+
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.year {
+    font-size: 20px;
+    margin: 0;
+}
+
+
+.farm-types {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #5b5a5a;
+}
+
+
+.left-bottom h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.left-bottom p {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 350px;
+}
+
+.left-button {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.left-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.right-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 10px 0 35px;
+}
+
+
+.farm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.farm-grid img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    .farm-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .left-content {
+        gap: 30px;
+    }
+
+    .farm-types {
+        gap: 10px;
+    }
+
+    .right-content h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .farm-grid img {
+        height: 120px;
+    }
+}
